@@ -1,0 +1,1 @@
+# ClippingKK email templates
