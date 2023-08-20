@@ -1,24 +1,23 @@
-import {
-  Button,
-  Container,
-  Hr,
-  Link,
-  Text,
-} from '@react-email/components';
+import { Container } from '@react-email/container'
+import { Hr } from '@react-email/hr'
+import { Text } from '@react-email/text'
+import { Button } from '@react-email/button'
+import { Link } from '@react-email/link'
 import * as React from 'react';
 import ClippingKKLayout from './layout/ck.layout';
+import { Section } from '@react-email/section'
 
 export const CKWelcomeEmail = () => (
   <ClippingKKLayout>
     <>
-    <Container>
-      <Text className='text-5xl font-extrabold text-center'>
-        Congrets!
-      </Text>
-    </Container>
-      <Text >
-        You can view your payments and a variety of other information about
-        your account right from your dashboard.
+      <Container>
+        <Text className='text-5xl font-extrabold text-center'>
+          Congrets!
+        </Text>
+      </Container>
+      <Text>
+        Thanks for syncing your clippings. You're now ready to
+        connect with your knowleges!
       </Text>
       <Button
         pX={10}
@@ -26,7 +25,7 @@ export const CKWelcomeEmail = () => (
         className='bg-blue-500 text-white rounded w-full text-center'
         href="https://clippingkk.annatarhe.com/auth/auth-v3"
       >
-        View your Dashboard
+        View my Dashboard
       </Button>
       <Hr />
       <Text >
@@ -36,6 +35,13 @@ export const CKWelcomeEmail = () => (
         </Link>{' '}
         handy.
       </Text>
+
+      <Section>
+        <Text>
+          if you prefer to use iOS application. welcome <Link href='https://apps.apple.com/us/app/clippingkk/id1537830952'>download ClippingKK from iOS App Store</Link>.
+        </Text>
+      </Section>
+
     </>
   </ClippingKKLayout>
 );

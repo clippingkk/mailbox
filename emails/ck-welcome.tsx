@@ -1,15 +1,16 @@
-import {
-  Button,
-  Hr,
-  Link,
-  Text,
-} from '@react-email/components';
+import { Hr } from '@react-email/hr'
+import { Text } from '@react-email/text'
+import { Button } from '@react-email/button'
+import { Link } from '@react-email/link'
 import * as React from 'react';
 import ClippingKKLayout from './layout/ck.layout';
 
 export const CKWelcomeEmail = () => (
   <ClippingKKLayout>
     <>
+      <Text className='text-6xl font-extrabold text-center'>
+        🎉
+      </Text>
       <Text className=''>
         Thanks for submitting your account information. You're now ready to
         connect with your knowleges!
