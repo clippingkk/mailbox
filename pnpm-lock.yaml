@@ -11,6 +11,9 @@ dependencies:
   '@react-email/button':
     specifier: 0.0.10
     version: 0.0.10
+  '@react-email/column':
+    specifier: 0.0.7
+    version: 0.0.7
   '@react-email/container':
     specifier: 0.0.8
     version: 0.0.8
@@ -479,6 +482,13 @@ packages:
 
   /@react-email/button@0.0.10:
     resolution: {integrity: sha512-S8r7NGTxXoxvw5kCdMzpwXdBHhYAhrYM9sylK6xr+2M9osrjHQOPLBoV3I/po9xdzN3WyRcZqQixH0wPeXy2Gw==}
+    engines: {node: '>=16.0.0'}
+    dependencies:
+      react: 18.2.0
+    dev: false
+
+  /@react-email/column@0.0.7:
+    resolution: {integrity: sha512-B29wVXyIcuVprgGpLkR23waPh/twlqmugZQsCKk05JlMCQ80/Puv4Lgj4dRsIJzgyTLMwG6xq17+Uxc5iGfuaQ==}
     engines: {node: '>=16.0.0'}
     dependencies:
       react: 18.2.0
