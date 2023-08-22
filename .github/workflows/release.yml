@@ -32,8 +32,11 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'pnpm'
     - name: Build
-      run: pnpm run export
+      run: |
+        pnpm install
+        pnpm run export
     - uses: montudor/action-zip@v1
+      if: ${{ steps.release.outputs.release_created }}
       with:
         args: zip -qq -r out.zip out
     - name: Upload Release Artifact
