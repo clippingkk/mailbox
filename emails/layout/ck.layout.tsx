@@ -1,17 +1,6 @@
-import { Container } from '@react-email/container'
-import { Hr } from '@react-email/hr'
-import { Text } from '@react-email/text'
-import { Button } from '@react-email/button'
-import { Column } from '@react-email/column'
-import { Html } from '@react-email/html'
-import { Head } from '@react-email/head'
-import { Heading } from '@react-email/heading'
-import { Preview } from '@react-email/preview'
-import { Section } from '@react-email/section'
-import { Body } from '@react-email/body'
-import { Img } from '@react-email/img'
+import { Body, Column, Container, Heading, Hr, Img, Preview, Section, Html, Text } from '@react-email/components'
 import { Tailwind } from '@react-email/tailwind'
-import React from 'react'
+import * as React from 'react'
 
 const baseUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`

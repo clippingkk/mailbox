@@ -1,14 +1,4 @@
-import { Container } from '@react-email/container'
-import { Hr } from '@react-email/hr'
-import { Text } from '@react-email/text'
-import { Button } from '@react-email/button'
-import { Link } from '@react-email/link'
-import { Html } from '@react-email/html'
-import { Head } from '@react-email/head'
-import { Heading } from '@react-email/heading'
-import { Preview } from '@react-email/preview'
-import { Body } from '@react-email/body'
-import { Img } from '@react-email/img'
+import { Body, Container, Heading, Hr, Img, Link, Preview, Section, Html, Text, Head } from '@react-email/components'
 import * as React from 'react';
 
 interface NotionMagicLinkEmailProps {

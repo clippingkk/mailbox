@@ -1,7 +1,4 @@
-import { Hr } from '@react-email/hr'
-import { Text } from '@react-email/text'
-import { Button } from '@react-email/button'
-import { Link } from '@react-email/link'
+import { Button, Container, Hr, Link, Section, Text } from '@react-email/components';
 import * as React from 'react';
 import ClippingKKLayout from './layout/ck.layout';
 
