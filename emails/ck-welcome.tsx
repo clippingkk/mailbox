@@ -12,14 +12,12 @@ export const CKWelcomeEmail = () => (
         Thanks for submitting your account information. You're now ready to
         connect with your knowleges!
       </Text>
-      <Text >
+      <Text>
         You can view your payments and a variety of other information about
         your account right from your dashboard.
       </Text>
       <Button
-        pX={10}
-        pY={10}
-        className='bg-blue-500 text-white rounded w-full text-center'
+        className='px-2 py-2 bg-blue-500 text-white rounded w-full text-center'
         href="https://clippingkk.annatarhe.com/auth/auth-v3"
       >
         View your Dashboard

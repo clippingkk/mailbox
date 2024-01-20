@@ -15,33 +15,32 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [20.x]
+        node-version: [21.x]
     steps:
-    - uses: google-github-actions/release-please-action@v3
-      id: release
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        release-type: node
-    - uses: actions/checkout@v3
-    - uses: pnpm/action-setup@v2
-      with:
-        version: 8
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'pnpm'
-    - name: Build
-      run: |
-        pnpm install
-        pnpm run export
-    - uses: montudor/action-zip@v1
-      if: ${{ steps.release.outputs.release_created }}
-      with:
-        args: zip -qq -r out.zip out
-    - name: Upload Release Artifact
-      if: ${{ steps.release.outputs.release_created }}
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run:
-        gh release upload ${{ steps.release.outputs.tag_name }} ./out.zip
+      - uses: google-github-actions/release-please-action@v3
+        id: release
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          release-type: node
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "pnpm"
+      - name: Build
+        run: |
+          pnpm install
+          pnpm run export
+      - uses: montudor/action-zip@v1
+        if: ${{ steps.release.outputs.release_created }}
+        with:
+          args: zip -qq -r out.zip out
+      - name: Upload Release Artifact
+        if: ${{ steps.release.outputs.release_created }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh release upload ${{ steps.release.outputs.tag_name }} ./out.zip
