@@ -1,5 +1,4 @@
-import { Body, Column, Container, Heading, Hr, Img, Preview, Section, Html, Text } from '@react-email/components'
-import { Tailwind } from '@react-email/tailwind'
+import { Body, Column, Container, Heading, Hr, Img, Preview, Section, Html, Text, Tailwind } from '@react-email/components'
 import * as React from 'react'
 
 const baseUrl = process.env.VERCEL_URL
