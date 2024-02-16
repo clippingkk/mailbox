@@ -20,7 +20,7 @@ export const CKWelcomeEmail = () => (
         className='px-2 py-2 bg-blue-500 text-white rounded w-full text-center'
         href="https://clippingkk.annatarhe.com/auth/auth-v3"
       >
-        View your Dashboard
+        View my Dashboard
       </Button>
       <Hr />
       <Text >
