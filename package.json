@@ -10,13 +10,14 @@
     "export": "email export"
   },
   "dependencies": {
-    "@react-email/components": "0.0.15",
-    "react": "^18.2.0",
-    "react-email": "2.1.0"
+    "@react-email/components": "0.0.25",
+    "react": "^18.3.1",
+    "react-email": "3.0.1"
   },
   "devDependencies": {
-    "@types/node": "^20.11.19",
-    "@types/react": "^18.2.57",
-    "typescript": "^5.3.3"
-  }
+    "@types/node": "^22.5.5",
+    "@types/react": "^18.3.5",
+    "typescript": "^5.6.2"
+  },
+  "packageManager": "pnpm@9.1.2+sha512.127dc83b9ea10c32be65d22a8efb4a65fb952e8fefbdfded39bdc3c97efc32d31b48b00420df2c1187ace28c921c902f0cb5a134a4d032b8b5295cbfa2c681e2"
 }
