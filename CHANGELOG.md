@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.1](https://github.com/clippingkk/mailbox/compare/v1.1.0...v1.1.1) (2024-09-14)
+
+
+### Bug Fixes
+
+* **ci:** fix ci issues ([8f79a47](https://github.com/clippingkk/mailbox/commit/8f79a478177e7d5e8e727691c70d82aa1d466d6f))
+* upgrade packages ([807eb11](https://github.com/clippingkk/mailbox/commit/807eb117cd7621bbb58012619cb76c974466b90a))
+
 ## [1.1.0](https://github.com/clippingkk/mailbox/compare/v1.0.0...v1.1.0) (2024-02-22)
 
 
